@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "Create EC2 instance"
+
+Parameters: 
+  InstanceTypeParameter: 
+    Description: Select instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues: 
+      - t2.micro
+      - t2.small
+      - t2.large
+
+Resources: 
+  Instance: # logical id 
+    Type: AWS::EC2::Instance #type 
+    Properties: 
+      InstanceType: !Ref InstanceTypeParameter
+      ImageId: ami-0dba2cb6798deb6d8
