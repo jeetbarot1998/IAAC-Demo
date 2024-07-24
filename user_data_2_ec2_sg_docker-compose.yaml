@@ -21,7 +21,7 @@ Resources:
     Properties:
       ImageId: "ami-04505e74c0741db8d"
       InstanceType: t2.micro
-      KeyName: mykeypair
+      KeyName: MyEC22
       Tags:
         - Key: Name
           Value: "Ubuntu"

@@ -13,15 +13,15 @@ Mappings:
   EnvMap: #logical id/map name
     dev:
       instanceType: "t2.large"
-      name: "dev"
+      name: "development"
 
     qa:
       instanceType: "t2.medium"
-      name: "qa"
+      name: "qatest"
 
     prod:
       instanceType: "t2.xlarge"
-      name: "prod"
+      name: "production"
 
 
 Resources: 
